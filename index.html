@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twilight coffe - Kafe & Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="Logo Kopi Senja">
+        <span>Twilight Coffee</span>
+      </a>
+  
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#promo">Promo</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Nikmati Kopi,<br>Rasakan Suasananya</h1>
+      <p>Kafe dengan biji kopi lokal, suasana minimalis yang tenang, Wi-Fi gratis, dan harga terjangkau.</p>
+      <a href="#menu" class="btn">Lihat Menu</a>
+    </div>
+  </section>
+
+  <section class="section" id="tentang">
+    <div class="container">
+      <div class="title">
+        <h2>Tentang Kami</h2>
+        <p>Tempat sederhana untuk menikmati kopi dan berkumpul bersama teman.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="card-body">
+          <h3>Sejarah</h3>
+          <p>Kopi Senja didirikan tahun 2023 oleh Asep Pratama, pecinta kopi yang ingin membuat tempat sederhana untuk berkumpul. Dari kedai kecil, kini menjadi kafe dengan harga terjangkau.</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Konsep dan Visi</h3>
+          <p>Minimalis dan cozy, dengan area kerja, Wi-Fi gratis, dan colokan listrik. Visi kami: menjadi kafe lokal yang dikenal karena kualitas kopi, pelayanan, dan suasananya.</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Keunggulan</h3>
+          <ul>
+            <li>Biji kopi lokal Indonesia</li>
+            <li>Wi-Fi gratis dan colokan listrik</li>
+            <li>Nyaman untuk belajar dan bekerja</li>
+            <li>Harga terjangkau</li>
+            <li>Area parkir tersedia</li>
+          </ul>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="menu">
+    <div class="container">
+      <div class="title">
+        <h2>Menu</h2>
+        <p>Kopi, minuman segar, dan camilan.</p>
+      </div>
+
+      <div class="menu-toolbar">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="cari" type="search" placeholder="Cari nama menu..." aria-label="Cari nama menu">
+        </div>
+        <select id="kategori" aria-label="Filter kategori">
+          <option value="semua">Semua kategori</option>
+          <option value="kopi">Kopi</option>
+          <option value="non-kopi">Non-Kopi</option>
+          <option value="makanan">Makanan &amp; Snack</option>
+        </select>
+      </div>
+
+      <div class="grid" id="daftar-menu">
+        <article class="card menu-card" data-nama="Espresso" data-kategori="kopi">
+          <div class="img"><img src="images/Espresso .jpeg" alt="Espresso" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Espresso</h3>
+            <span class="label">Kopi</span>
+            <p>Kopi dengan cita rasa kuat dan karakter yang pekat, cocok untuk pencinta kopi klasik.</p>
+            <p class="harga">Rp15.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Americano" data-kategori="kopi">
+          <div class="img"><img src="images/americano.jpg" alt="Americano" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Americano</h3>
+            <span class="label">Kopi</span>
+            <p>Perpaduan espresso dengan air panas atau air dan es batu, cocok dinikmati kapan saja.</p>
+            <p class="harga">Rp18.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Cappuccino" data-kategori="kopi">
+          <div class="img"><img src="images/Cappuchino.jpg" alt="Cappuccino" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Cappuccino</h3>
+            <span class="label">Kopi</span>
+            <p>Perpaduan espresso, susu, dan busa susu yang menghasilkan rasa kopi lembut dan seimbang.</p>
+            <p class="harga">Rp22.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Cafe Latte" data-kategori="kopi">
+          <div class="img"><img src="images/latte.jpg" alt="Cafe Latte" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Cafe Latte</h3>
+            <span class="label">Kopi</span>
+            <p>Perpaduan kopi espresso dan susu dengan rasa creamy yang lembut.</p>
+            <p class="harga">Rp22.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Kopi Susu Senja" data-kategori="kopi">
+          <div class="img"><img src="images/kopi susu.jpeg" alt="Kopi Susu Senja" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Kopi Susu Sore</h3>
+            <span class="label">Kopi</span>
+            <p>Perpaduan kopi dari beans signature twilight coffee dengan susu dengan rasa lembut untuk menemani waktu santai.</p>
+            <p class="harga">Rp25.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Caramel Latte" data-kategori="kopi">
+          <div class="img"><img src="images/Caramel .jpeg" alt="Caramel Latte" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Caramel Latte</h3>
+            <span class="label">Kopi</span>
+            <p>Perpaduan espresso, susu, dan sentuhan karamel dengan cita rasa manis dan lembut.</p>
+            <p class="harga">Rp24.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Matcha Latte" data-kategori="non-kopi">
+          <div class="img"><img src="images/Matcha.jpeg" alt="Matcha Latte" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Matcha Latte</h3>
+            <span class="label">Non-Kopi</span>
+            <p>Minuman matcha dengan susu yang menghasilkan rasa lembut dan karakter teh hijau.</p>
+            <p class="harga">Rp23.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Chocolate" data-kategori="non-kopi">
+          <div class="img"><img src="images/chocolate.jpg" alt="Chocolate" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Chocolate</h3>
+            <span class="label">Non-Kopi</span>
+            <p>Minuman cokelat dengan cita rasa manis dan lembut, cocok untuk pencinta cokelat.</p>
+            <p class="harga">Rp20.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Lemon Tea" data-kategori="non-kopi">
+          <div class="img"><img src="images/lemon tea.jpeg" alt="Lemon Tea" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Lemon Tea</h3>
+            <span class="label">Non-Kopi</span>
+            <p>Perpaduan teh dan lemon dengan sensasi rasa segar.</p>
+            <p class="harga">Rp15.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Lychee Tea" data-kategori="non-kopi">
+          <div class="img"><img src="images/Lychee Tea.jpeg" alt="Lychee Tea" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Lychee Tea</h3>
+            <span class="label">Non-Kopi</span>
+            <p>Minuman teh dengan sentuhan rasa leci yang manis dan menyegarkan.</p>
+            <p class="harga">Rp18.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Milkshake Chocolate" data-kategori="non-kopi">
+          <div class="img"><img src="images/chocolate milkshake.jpg" alt="Milkshake Chocolate" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Milkshake Chocolate</h3>
+            <span class="label">Non-Kopi</span>
+            <p>Minuman cokelat bergaya milkshake dengan sensasi lembut dan creamy.</p>
+            <p class="harga">Rp23.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="French Fries" data-kategori="makanan">
+          <div class="img"><img src="images/freanchfries.jpg" alt="French Fries" loading="lazy"></div>
+          <div class="card-body">
+            <h3>French Fries</h3>
+            <span class="label">Makanan & Snack</span>
+            <p>Kentang goreng yang cocok dijadikan camilan saat bersantai di kafe.</p>
+            <p class="harga">Rp15.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Roti Bakar Cokelat" data-kategori="makanan">
+          <div class="img"><img src="images/Grilled Chocolate Sandwich.jpeg" alt="Roti Bakar Cokelat" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Roti Bakar Cokelat</h3>
+            <span class="label">Makanan & Snack</span>
+            <p>Roti bakar dengan rasa cokelat manis untuk teman minum kopi atau teh.</p>
+            <p class="harga">Rp17.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Roti Bakar Keju" data-kategori="makanan">
+          <div class="img"><img src="images/roti bakar keju.jpeg" alt="Roti Bakar Keju" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Roti Bakar Keju</h3>
+            <span class="label">Makanan & Snack</span>
+            <p>Roti bakar dengan sentuhan keju yang gurih dan cocok dinikmati sebagai camilan.</p>
+            <p class="harga">Rp18.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Chicken Wings" data-kategori="makanan">
+          <div class="img"><img src="images/chicken wings.jpeg" alt="Chicken Wings" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Chicken Wings</h3>
+            <span class="label">Makanan & Snack</span>
+            <p>Sajian sayap ayam yang cocok dinikmati sebagai camilan atau pendamping minuman.</p>
+            <p class="harga">Rp25.000</p>
+          </div>
+        </article>
+        <article class="card menu-card" data-nama="Brownies" data-kategori="makanan">
+          <div class="img"><img src="images/brownies.jpeg" alt="Brownies" loading="lazy"></div>
+          <div class="card-body">
+            <h3>Brownies</h3>
+            <span class="label">Makanan & Snack</span>
+            <p>Kue brownies dengan cita rasa cokelat yang cocok untuk teman bersantai.</p>
+            <p class="harga">Rp15.000</p>
+          </div>
+        </article>
+      </div>
+      <p class="menu-kosong" id="menu-kosong" hidden>Menu tidak ditemukan</p>
+    </div>
+  </section>
+
+  <section class="section" id="promo">
+    <div class="container">
+      <div class="title">
+        <h2>Promo</h2>
+        <p>Berlaku sepanjang tahun, syarat dan ketentuan berlaku.</p>
+      </div>
+      <div class="grid four">
+        <div class="card"><div class="card-body">
+          <h3>Kopi Hemat</h3>
+          <p>Setiap Senin, diskon 20% untuk semua menu kopi.</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Paket Senja</h3>
+          <ul class="price">
+            <li>Kopi Susu Senja + French Fries <b>Rp30.000</b></li>
+            <li>Cafe Latte + Roti Bakar Cokelat <b>Rp35.000</b></li>
+          </ul>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Mahasiswa</h3>
+          <p>Diskon 10% dengan kartu mahasiswa, minimal pembelian Rp30.000.</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Ulang Tahun</h3>
+          <p>Gratis 1 minuman dengan menunjukkan identitas.</p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="layanan">
+    <div class="container">
+      <div class="title">
+        <h2>Layanan</h2>
+        <p>Pilih cara menikmati Kopi Senja.</p>
+      </div>
+      <div class="grid four">
+        <div class="card"><div class="card-body">
+          <h3>Dine In</h3>
+          <p>Nikmati langsung di kafe dengan suasana nyaman.</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Take Away</h3>
+          <p>Pesan untuk dibawa pulang.</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Pesan Antar</h3>
+          <p>Lewat WhatsApp, GoFood, atau GrabFood. Jangkauan sekitar 15 km.</p>
+        </div></div>
+        <div class="card"><div class="card-body">
+          <h3>Reservasi</h3>
+          <p>Minimal 4 orang, dipesan minimal 1 hari sebelumnya.</p>
+          <a href="#kontak">Isi formulir</a>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kontak">
+    <div class="container contact">
+      <div>
+        <h2>Kontak</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Jl. Raya Sungaipua No. 10, Agam, Sumatera Barat</p>
+        <p><i class="fa-brands fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
+        <p><i class="fa-regular fa-envelope"></i> Email: <a href="mailto:info@twilightcoffee.id">info@twilightcoffee.id</a></p>
+        <p><i class="fa-brands fa-instagram"></i> Instagram: <a href="https://www.instagram.com/twilightcoffe.id" target="_blank">@twilightcoffee.id</a></p>
+        <h3 style="margin: 20px 0 8px"><i class="fa-regular fa-clock"></i> Jam Buka</h3>
+        <ul>
+          <li>Senin - Kamis: 09.00 - 22.00</li>
+          <li>Jumat: 14.00 - 23.00</li>
+          <li>Sabtu: 09.00 - 23.00</li>
+          <li>Minggu: 09.00 - 22.00</li>
+        </ul>
+      </div>
+
+      <form id="form" novalidate>
+        <h3>Formulir Reservasi</h3>
+        <label for="nama">Nama</label>
+        <input id="nama">
+        <small class="error" id="err-nama"></small>
+        <label for="tanggal">Tanggal</label>
+        <input id="tanggal" type="date">
+        <small class="error" id="err-tanggal"></small>
+        <label for="jam">Jam</label>
+        <input id="jam" type="time">
+        <small class="error" id="err-jam"></small>
+        <label for="jumlah">Jumlah orang (minimal 4)</label>
+        <input id="jumlah" type="number" min="4" value="4">
+        <small class="error" id="err-jumlah"></small>
+        <button class="btn" type="submit">Periksa Data</button>
+        <p class="form-hasil" id="form-hasil" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#promo">Promo</a>
+      <a href="#kontak">Kontak</a>
+    </p>
+  </footer>
+  <button class="to-top" id="to-top" type="button" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
