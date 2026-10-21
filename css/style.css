@@ -544,7 +544,7 @@ input.invalid {
     border-radius: 12px;
   }
 
-
+ 
   #daftar-menu .menu-card img {
     width: 100%;
     height: auto;
@@ -605,5 +605,80 @@ input.invalid {
 
   #daftar-menu .menu-card .harga {
     font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 640px) {
+  .navbar .container {
+    width: 94%;
+    min-height: 0;
+    padding: 10px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .navbar .logo {
+    flex: 0 0 auto;
+    gap: 7px;
+    font-size: clamp(16px, 4.5vw, 21px);
+    white-space: nowrap;
+  }
+
+  .navbar .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .navbar nav {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .navbar nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar nav a {
+    flex: 0 0 auto;
+    padding: 6px 0;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar .container {
+    gap: 8px;
+  }
+
+  .navbar .logo {
+    gap: 5px;
+    font-size: 15px;
+  }
+
+  .navbar .logo img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .navbar nav {
+    gap: 13px;
+  }
+
+  .navbar nav a {
+    font-size: 12px;
   }
 }
